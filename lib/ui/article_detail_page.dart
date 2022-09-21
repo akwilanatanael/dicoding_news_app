@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:dicoding_news_app/models/article.dart';
-import 'package:dicoding_news_app/pages/ui/article_web_view.dart';
+import 'package:dicoding_news_app/ui/article_web_view.dart';
 import 'package:flutter/material.dart';
 
 class ArticleDetailPage extends StatelessWidget {

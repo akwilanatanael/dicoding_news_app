@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:dicoding_news_app/pages/widgets/custom_scaffold.dart';
+import 'package:dicoding_news_app/widgets/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 

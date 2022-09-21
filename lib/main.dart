@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:dicoding_news_app/models/article.dart';
-import 'package:dicoding_news_app/pages/ui/article_detail_page.dart';
-import 'package:dicoding_news_app/pages/ui/article_web_view.dart';
-import 'package:dicoding_news_app/pages/ui/news_list_page.dart';
-import 'package:dicoding_news_app/shared/styles.dart';
+import 'package:dicoding_news_app/ui/article_detail_page.dart';
+import 'package:dicoding_news_app/ui/article_web_view.dart';
+import 'package:dicoding_news_app/ui/home_page.dart';
+import 'package:dicoding_news_app/common/styles.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(elevation: 0),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            primary: secondaryColor,
-            onPrimary: Colors.white,
+            backgroundColor: secondaryColor,
+            foregroundColor: Colors.white,
             textStyle: TextStyle(),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
@@ -40,9 +40,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: NewsListPage.routeName,
+      initialRoute: HomePage.routeName,
       routes: {
-        NewsListPage.routeName: (context) => const NewsListPage(),
+        HomePage.routeName: (context) => HomePage(),
         ArticleDetailPage.routeName: (context) => ArticleDetailPage(
               article: ModalRoute.of(context)?.settings.arguments as Article,
             ),
